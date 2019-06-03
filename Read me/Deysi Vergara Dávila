@@ -1,11 +1,13 @@
-Debe contener lo siguiente:
-- Un título con el nombre de tu proyecto.
-REPORTES CIFRADOS
-- Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-- La imagen final de tu proyecto.
-- Investigación UX:
-  - Explicar quiénes son los usuarios y los objetivos en relación con el producto.
-  - Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
-  - Luego colocarás la foto de tu primer prototipo en papel.
-  - Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  - Imagen del prototipo final en Balsamiq.
+## REPORTES CIFRADOS
+
+-Este proyecto produce documentos de evaluacion psicologica que no deben de ser leido por mas personas que por el mismo paciente, 
+para lo que necesita generar reportes cifrados.
+
+Los usuarios son personas del area de salud, sobre todo el area de psicologia. Este proyecto servira para generar reportes 
+psicologicos que sean estrictamente usado por el psicologo y el paciente, evitando que se pueda filtrar la informacion que le debe
+corresponder exclusivamente a ellos dos.
+
+ - Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
+ - Luego colocarás la foto de tu primer prototipo en papel.
+ - Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+ - Imagen del prototipo final en Balsamiq.
