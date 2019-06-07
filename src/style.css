@@ -1,1 +1,37 @@
-/* Acá van tus reglas de estilo */
+
+.hidden {
+   display: none !important; 
+}/* Acá van tus reglas de estilo */
+
+.show{
+	display: block !important;
+}
+
+.wrong{
+	color:red !important;
+}
+
+.center{
+text-align: center;
+}
+
+h1{
+color:purple;
+font-size:50px;
+
+}
+
+.text
+{
+width:400px;
+height:300px;
+border: 1px;
+}
+
+
+body {
+background-image: url(fondo.jpg);
+background-repeat: no-repeat;
+background-size: 1900px;
+background-position: center 0px;
+}

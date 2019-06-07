@@ -1,8 +1,9 @@
-window.cipher = {
-  encode: (offset, string) => {
-    /* Acá va tu código que cifra*/
-  },
-  decode: (offset, string) => {
-    /* Acá va tu código que descifra*/
-  }
-};
+//window es general para la ventana que se 
+//window.cipher={
+  //encode:(offset,string)=>{
+
+
+
+
+
+
