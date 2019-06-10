@@ -41,5 +41,31 @@ const cifrar = document.getElementById('cifrar');
 	texto_cifrado.value=ok;
 	});
 	
+const descifrar1=document.getElementById('descifrar1');
 
-//
+const descifrar = document.getElementById('descifrar');
+	descifrar.addEventListener('click', ()=>{
+	const ok2 = cipher.decode(offset1.value,texto_1.value);
+	ingresar_texto.classList.replace('show','hidden');
+    descifrar1.classList.replace('hidden','show');
+	
+	texto_descifrado.value=ok2;
+	});
+
+//para poner nuevo texto 
+const nuevo=document.getElementById("nvo_1");
+nuevo.addEventListener('click',()=>{
+ingresar_texto.classList.replace('hidden','show');
+cifrar1.classList.replace('show','hidden');
+});
+
+
+const nuevo2=document.getElementById("nvo_2");
+nuevo2.addEventListener('click',()=>{
+ingresar_texto.classList.replace('hidden','show');
+descifrar1.classList.replace('show','hidden');
+});
+
+
+
+//const mayus=document.getElementById(texto_1).toLowerCase()
