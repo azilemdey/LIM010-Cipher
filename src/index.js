@@ -15,7 +15,7 @@ if(contrasena.value===contrasena_correcta){
     ingresar.classList.replace('hidden','show');
 } else{
     if(intentos<2){
-        console.log('intentalo de nuevo');
+        alert('intentalo de nuevo');
         contrasena.value='';
         intentos++;
 }else{
@@ -28,8 +28,18 @@ btn_ingresar.addEventListener('click',tres_int);
 //CIFRAR 1= NOMBRE DE LA SECCION 
 const cifrar1=document.getElementById('cifrar1');
 const ingresar_texto=document.getElementById('ingresar_texto');
+
+//CONSTANTE PARA QUE ME DE LA INFORMACION DEL TEXTO 
+
 //CIFRAR= NOMBRE DE MI BOTON
-const cifrar=document.getElementById('cifrar');
-cifrar.addEventListener('click', ()=>{
-    ingresar_texto.classList.replace('show','hidden');
-    cifrar1.classList.replace('hidden','show')});
+const cifrar = document.getElementById('cifrar');
+	cifrar.addEventListener('click', ()=>{
+	const ok = cipher.encode(offset1.value,texto_1.value);
+	ingresar_texto.classList.replace('show','hidden');
+    cifrar1.classList.replace('hidden','show');
+	console.log(ok);
+	texto_cifrado.value=ok;
+	});
+	
+
+//
