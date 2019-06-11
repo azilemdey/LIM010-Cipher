@@ -31,7 +31,7 @@ const ingresar_texto=document.getElementById('ingresar_texto');
 
 //CONSTANTE PARA QUE ME DE LA INFORMACION DEL TEXTO 
 
-//CIFRAR= NOMBRE DE MI BOTON
+//
 const cifrar = document.getElementById('cifrar');
 	cifrar.addEventListener('click', ()=>{
 	const ok = cipher.encode(offset1.value,texto_1.value);
@@ -67,5 +67,17 @@ descifrar1.classList.replace('show','hidden');
 });
 
 
+const finalizar=document.getElementById("finalizar")
+finalizar.addEventListener('click',()=>{
+cifrar1.classList.replace('show','hidden');
+final.classList.replace('hidden','show')
 
+});
+
+const finalizar2=document.getElementById("finalizar2")
+finalizar2.addEventListener('click',()=>{
+descifrar1.classList.replace('show','hidden');
+final.classList.replace('hidden','show')
+
+})
 //const mayus=document.getElementById(texto_1).toLowerCase()

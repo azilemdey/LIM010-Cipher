@@ -11,14 +11,16 @@
 	color:red !important;
 }
 
-
+.top{
+	text-align: 
+}
 
 .center{
 text-align: center;
 }
 
 h1{
-color:purple;
+color:white;
 font-size:50px;
 
 }
@@ -37,3 +39,14 @@ background-repeat: no-repeat;
 background-size: 1900px;
 background-position: center 0px;
 }
+
+.tamaño{
+font-size: 20px;
+font-family: 'Bookman Old Style'
+}
+
+
+
+
+
+
