@@ -28,53 +28,56 @@ btn_ingresar.addEventListener('click',tres_int);
 //CIFRAR 1= NOMBRE DE LA SECCION 
 const cifrar1=document.getElementById('cifrar1');
 const ingresar_texto=document.getElementById('ingresar_texto');
-
+let texto_cifrado2=document.getElementById('texto_cifrado');
+let texto_descifrado2=document.getElementById('texto_descifrado');
 //CONSTANTE PARA QUE ME DE LA INFORMACION DEL TEXTO 
 
 //
 const cifrar = document.getElementById('cifrar');
 	cifrar.addEventListener('click', ()=>{
-	const ok = cipher.encode(offset1.value,texto_1.value);
+	const offset2=document.getElementById('offset1').value
+	const texto_2=document.getElementById('texto_1').value
+	const ok = cipher.encode(offset2,texto_2);
 	ingresar_texto.classList.replace('show','hidden');
     cifrar1.classList.replace('hidden','show');
-	console.log(ok);
-	texto_cifrado.value=ok;
+    texto_cifrado2.value=ok;
 	});
 	
 const descifrar1=document.getElementById('descifrar1');
 
 const descifrar = document.getElementById('descifrar');
 	descifrar.addEventListener('click', ()=>{
-	const ok2 = cipher.decode(offset1.value,texto_1.value);
+	const offset2=document.getElementById('offset1').value
+	const texto_2=document.getElementById('texto_1').value
+	const ok2 = cipher.decode(offset2,texto_2);
 	ingresar_texto.classList.replace('show','hidden');
     descifrar1.classList.replace('hidden','show');
-	
-	texto_descifrado.value=ok2;
+	texto_descifrado2.value=ok2;
 	});
 
 //para poner nuevo texto 
-const nuevo=document.getElementById("nvo_1");
+const nuevo=document.getElementById('nvo_1');
 nuevo.addEventListener('click',()=>{
 ingresar_texto.classList.replace('hidden','show');
 cifrar1.classList.replace('show','hidden');
 });
 
 
-const nuevo2=document.getElementById("nvo_2");
+const nuevo2=document.getElementById('nvo_2');
 nuevo2.addEventListener('click',()=>{
 ingresar_texto.classList.replace('hidden','show');
 descifrar1.classList.replace('show','hidden');
 });
 
 
-const finalizar=document.getElementById("finalizar")
+const finalizar=document.getElementById('finalizar')
 finalizar.addEventListener('click',()=>{
 cifrar1.classList.replace('show','hidden');
 final.classList.replace('hidden','show')
 
 });
 
-const finalizar2=document.getElementById("finalizar2")
+const finalizar2=document.getElementById('finalizar2')
 finalizar2.addEventListener('click',()=>{
 descifrar1.classList.replace('show','hidden');
 final.classList.replace('hidden','show')
