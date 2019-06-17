@@ -20,26 +20,15 @@ text-align: right
 }
 
 .letra{
-	color: #e44222 	;
+	color: white;
 	font-size:50px;
 	font-weight: 900;
 	}
 
 .letra_2{
-color: #1d0a04;
+color: white;
 font-size:25px;
 font-weight: 900;
-}
-
-.letra_3{
-color:darkblue;
-font-size:25px;
-}
-
-.letra_4{
-	color: rgb(156, 154, 25);
-	font-size:25px;
-	font-weight: 900;
 }
 
 .text
@@ -53,8 +42,8 @@ border: 1px;
 body {
 background-image: url(fondo.png);
 background-repeat: no-repeat;
-background-size: 1380px;
-background-position: center -900px;
+background-size: 1350px;
+background-position: center 0px;
 }
 
 .tamaño{

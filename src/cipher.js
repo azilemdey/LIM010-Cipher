@@ -32,18 +32,17 @@ window.cipher= {
            const ascci = string[i].charCodeAt();
            if(ascci>=65 && ascci<=90)
             {  
-                const code1 =((ascci+65-parseInt(offset))%26+65);
-                solucion += String.fromCharCode(code1);}
-
-                else{if(ascci>=97 && ascci<=122)
-                  {
-                    const code1 =((ascci+97 + 14-parseInt(offset))%26+97);
-                  solucion += String.fromCharCode(code1);
-                  }
-                else{solucion += ' '}
+              let code1 =((ascci-65-parseInt(offset))%26);
+                if(code1<0)
+                  {code1=code1+91}
+                else 
+                   {code1=code1+65} 
+            solucion += String.fromCharCode(code1);
+                               
           }
       }
-    return solucion;
+   
+      return solucion;
   }
 
 
