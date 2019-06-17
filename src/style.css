@@ -1,9 +1,9 @@
 
 .hidden {
    display: none !important; 
-}/* Acá van tus reglas de estilo */
+}
 
-.show{
+.show {
 	display: block !important;
 }
 
@@ -11,33 +11,50 @@
 	color:red !important;
 }
 
-.top{
-	text-align: 
-}
-
 .center{
 text-align: center;
 }
 
-h1{
-color:white;
-font-size:50px;
+.right{
+text-align: right
+}
 
+.letra{
+	color: #e44222 	;
+	font-size:50px;
+	font-weight: 900;
+	}
+
+.letra_2{
+color: #1d0a04;
+font-size:25px;
+font-weight: 900;
+}
+
+.letra_3{
+color:darkblue;
+font-size:25px;
+}
+
+.letra_4{
+	color: rgb(156, 154, 25);
+	font-size:25px;
+	font-weight: 900;
 }
 
 .text
 {
-width:400px;
-height:300px;
+width:300px;
+height:200px;
 border: 1px;
 }
 
 
 body {
-background-image: url(fondo.jpg);
+background-image: url(fondo.png);
 background-repeat: no-repeat;
-background-size: 1900px;
-background-position: center 0px;
+background-size: 1380px;
+background-position: center -900px;
 }
 
 .tamaño{

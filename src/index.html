@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-     
-        </header>
-    <main>
-           <section id="login" class=" center">
-       <h1>¡BIENVENIDOS A PROTEGIDO!</h1>
-       <p>Coloca tu contraseña aqui</p>
-     <input type="password" id="contrasena">
-     <p><button type="button" id="btn">Ingresar </button>
-     </p>
-      </section>
 
-       <section id="ingresar_texto" class=" hidden center">
-      <h2>INGRESA TU TEXTO:</h2>
-      <textarea class="text tamaño"  id="texto_1" name="ingresa_texto"></textarea>
-      <p>Elige una clave secreta:</p>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+   <h1 class="letra center">PROTEGIDO</h1>
+  </header>
+  <main>
+    <section id="login" class=" center letra_2 ">
+      <p>COLOCA TU CONTRASEÑA AQUI:</p>
+      <input type="password" id="contrasena">
+      <p><button type="button" id="ingresar">Ingresar </button>
+      </p>
+    </section>
+
+    <section id="ingresar_texto" class=" hidden center letra_4">
+      <h4>INGRESA TU TEXTO:</h4>
+      <textarea class="text tamaño" id="texto_1" name="ingresa_texto"></textarea>
+      <p>ELIGE TU CLAVE SECRETA:</p>
       <input type="number" min="1" max="100" id="offset1">
-      <p>¿Que quieres hacer?</p>
+      <p>¿QUE QUIERES HACER?</p>
       <button type="button" id="cifrar">CIFRAR</button>
       <button type="button" id="descifrar">DESCIFRAR</button>
-      </section>
-      
-      <section id="cifrar1" class="hidden center">
-      <h3>TEXTO CIFRADO</h3>   
+    </section>
+
+    <section id="cifrar1" class="hidden center letra_4">
+      <h3>TEXTO CIFRADO</h3>
       <textarea class="text tamaño" id="texto_cifrado"> </textarea>
-      <p><button type="button" id="nvo_1" >NUEVO TEXTO</button></p>
+      <p><button type="button" id="nvo_1">NUEVO TEXTO</button></p>
+      <button type="button" id=borrar>BORRAR</button>
       <button type="button" id="finalizar">FINALIZAR</button>
-      </section>
+    </section>
 
-      <section id="descifrar1" class="hidden center">
+    <section id="descifrar1" class="hidden center letra_4">
       <h3>TEXTO DESCIFRADO</h3>
-      <textarea  class="text tamaño"  id="texto_descifrado"></textarea>
-      <p><button type="button" id="nvo_2" >NUEVO TEXTO</button></p>
+      <textarea class="text tamaño" id="texto_descifrado"></textarea>
+      <p><button type="button" id="nvo_2">NUEVO TEXTO</button></p>
       <button type="button" id="finalizar2">FINALIZAR</button>
-      </section>      
+    </section>
 
-      <section id="final" class="hidden center">
-      <p>¡GRACIAS POR USAR "PROTEGIDO"!
-      ESPERAMOS TU REGRESO
-
-      ¡TEN UN BUEN DÍA!</p>
+    <section id="final" class="hidden letra center">
+      <p class="center">¡GRACIAS POR TU VISITA"!</p>
       </section>
+  </main>
+  <footer class="right letra_3">
+  Desarrollado por: Deysi Vergara Dávila
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 
-    </main>
-    <footer></footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
 </html>
