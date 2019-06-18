@@ -9,47 +9,57 @@
 
 <body>
   <header>
-   <h1 class="letra center">PROTEGIDO</h1>
+    <h1 class="letra center">PROTEGIDO</h1>
   </header>
   <main>
-    <section id="login" class=" center letra_2 ">
-      <p>COLOCA TU CONTRASEÑA AQUI:</p>
-      <input type="password" id="contrasena">
-      <p><button type="button" id="ingresar">Ingresar </button>
-      </p>
+    <section id="login" class=" center letra-2">
+      <form>
+        <label class="block">COLOCA TU CONTRASEÑA AQUI:</label>
+        <input type="password" id="contrasena">
+        <div><button type="button" id="ingresar" class="boton">Ingresar </button></div>
+      </form>
     </section>
 
-    <section id="ingresar_texto" class=" hidden center letra_2">
-      <h4>INGRESA TU TEXTO:</h4>
-      <textarea class="text tamaño" id="texto_1" name="ingresa_texto"></textarea>
-      <p>ELIGE TU CLAVE SECRETA:</p>
-      <input type="number" min="1" max="100" id="offset1">
-      <p>¿QUE QUIERES HACER?</p>
-      <button type="button" id="cifrar">CIFRAR</button>
-      <button type="button" id="descifrar">DESCIFRAR</button>
+    <section id="ingresar_texto" class=" hidden center letra-2">
+      </form>
+      <label class="block">INGRESA TU TEXTO:</label>
+      <textarea class="text tamaño" id="texto-1" name="ingresa_texto"></textarea>
+      <label class="block">ELIGE TU CLAVE SECRETA:</label>
+      <input type="number" min="1" max="2000" id="offset1" class="boton">
+      <label class="block">¿QUE QUIERES HACER?</label>
+      <button type="button" id="cifrar" class="boton">CIFRAR</button>
+      <button type="button" id="descifrar" class="boton">DESCIFRAR</button>
+      </form>
     </section>
 
-    <section id="cifrar1" class="hidden center letra_2">
-      <h3>TEXTO CIFRADO</h3>
-      <textarea class="text tamaño" id="texto_cifrado"> </textarea>
-      <p><button type="button" id="nvo_1">NUEVO TEXTO</button></p>
-      <button type="button" id=borrar>BORRAR</button>
-      <button type="button" id="finalizar">FINALIZAR</button>
+    <section id="cifrar1" class="hidden center letra-2">
+      <form>
+        <label class="block center">TEXTO CIFRADO</label>
+        <textarea class="text tamaño" id="texto-cifrado"> </textarea>
+        <div id="botonesCifrado">
+          <button type="button" id="nvo-1" class="boton">NUEVO TEXTO</button>
+          <button type="button" id="finalizar" class="boton">FINALIZAR</button>
+        </div>
+      </form>
     </section>
 
-    <section id="descifrar1" class="hidden center letra_2">
-      <h3>TEXTO DESCIFRADO</h3>
-      <textarea class="text tamaño" id="texto_descifrado"></textarea>
-      <p><button type="button" id="nvo_2">NUEVO TEXTO</button></p>
-      <button type="button" id="finalizar2">FINALIZAR</button>
+    <section id="descifrar1" class="hidden center letra-2">
+      <form>
+        <label class="block center">TEXTO DESCIFRADO</label>
+        <textarea class="text tamaño" id="texto-descifrado"></textarea>
+        <div id="botonesDescifrado">
+          <button type="button" id="nvo-2" class="boton">NUEVO TEXTO</button>
+          <button type="button" id="finalizar2" class="boton">FINALIZAR</button>
+        </div>
+      </form>
     </section>
 
     <section id="final" class="hidden letra center">
-      <p class="center">¡GRACIAS POR TU VISITA"!</p>
-      </section>
+      <p class="center">¡GRACIAS POR TU VISITA!</p>
+    </section>
   </main>
-  <footer class="right letra_2">
-  <p>Desarrollado por: Deysi Vergara Dávila</p>
+  <footer class="right letra-2">
+    <p>Desarrollado por: Deysi Vergara Dávila</p>
   </footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
